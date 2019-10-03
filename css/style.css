@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #695564;
+  width: 100%;
+  background: #c6f2f5; }
+
+header {
+  border: 0px solid black;
+  width: 100%;
+  min-width: 500px;
+  background-color: #2abbdb;
+  font-size: 20px; }
+  header .logo {
+    display: inline-block;
+    border: 0px solid; }
+    header .logo img {
+      height: 140px; }
+  header .nameCompany {
+    display: inline-block;
+    border: 0px solid;
+    vertical-align: top;
+    margin: 30px 30px;
+    color: #695564; }
+    header .nameCompany .name {
+      font-size: 26px;
+      font-weight: bold;
+      color: #454144; }
+  header .contactCompany {
+    display: inline-block;
+    float: right;
+    border: 0px solid;
+    vertical-align: top;
+    margin: 20px 30px 0 0;
+    padding: 10px 10px 0 10px;
+    color: #695564;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right; }
+    header .contactCompany .iconBlind {
+      font-size: 17px;
+      margin-top: 8px;
+      cursor: pointer;
+      border: 0px solid;
+      float: right; }
+      header .contactCompany .iconBlind img {
+        border: 0px solid; }
+      header .contactCompany .iconBlind p {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 5px;
+        padding-left: 2px;
+        color: black; }
+
+.line {
+  height: 10px;
+  width: 100%;
+  background-color: #2d848a;
+  clear: both; }
+
+.gallery {
+  width: 60%;
+  height: 360px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto; }
+
+nav {
+  width: 100%;
+  text-align: center; }
+  nav ul {
+    list-style: none;
+    background-color: #2db1ba;
+    padding: 0;
+    margin: 0;
+    font-size: 0; }
+    nav ul li {
+      display: inline-block;
+      border-right: 1px solid;
+      margin: 0; }
+      nav ul li a {
+        display: inline-block;
+        padding: 12px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #695564; }
+      nav ul li:last-child {
+        border-right: 0; }
+      nav ul li a:hover {
+        background-color: #3c7d82;
+        color: white; }
+
+.mainContent {
+  margin: auto;
+  border: 0px solid;
+  width: 100%; }
+  .mainContent aside {
+    float: left;
+    width: 30%;
+    border-right: 2px solid;
+    margin: 10px 2px;
+    padding: 6px;
+    background-color: #b8d9db; }
+    .mainContent aside ul {
+      border: 0px solid;
+      border-radius: 6px;
+      padding: 10px 4px;
+      list-style: none; }
+      .mainContent aside ul li {
+        margin-bottom: 4px;
+        padding-left: 4px; }
+        .mainContent aside ul li a {
+          color: #797a7f;
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 18px; }
+          .mainContent aside ul li a:hover {
+            text-decoration: underline; }
+    .mainContent aside .info {
+      list-style: circle;
+      margin-left: 20px;
+      color: #6e6ccc; }
+      .mainContent aside .info a {
+        font-weight: normal;
+        font-size: 16px; }
+    .mainContent aside p {
+      font-style: italic; }
+      .mainContent aside p span {
+        color: red; }
+    .mainContent aside .ban {
+      border: 0px solid;
+      float: left;
+      margin: 10px 6px 40px 6px; }
+      .mainContent aside .ban img {
+        width: 150px;
+        height: 113px; }
+  .mainContent main {
+    float: right;
+    width: 65%;
+    border: 0px solid;
+    padding: 10px;
+    margin-top: 20px; }
+    .mainContent main h3 {
+      text-align: center;
+      margin: 8px 0; }
+
+footer {
+  padding: 0;
+  border: 1px solid;
+  height: 80px;
+  background-color: #4c4e57; }
+  footer div {
+    border: 0px solid;
+    margin-top: 10px;
+    color: white; }
+  footer .contactFooter {
+    float: left;
+    margin-left: 20px; }
+  footer .developSite {
+    float: right;
+    margin-right: 20px; }
+  footer a {
+    color: #bbbcc4; }
+
+/* Для слабовидящих    */
+.galleryBlind {
+  display: none; }
+
+.lineBlind {
+  background-color: black;
+  height: 16px; }
+
+.navBlind ul {
+  background-color: white;
+  word-spacing: 0px;
+  letter-spacing: 0px; }
+  .navBlind ul li {
+    word-spacing: 6px;
+    line-height: 1.4; }
+  .navBlind ul a {
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px; }
+  .navBlind ul a:hover {
+    background-color: black;
+    color: white; }
+
+.bodyPrt {
+  color: black;
+  width: 100%;
+  background: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  line-height: 1.4; }
+
+.mainContentBlind .asideBlind {
+  background-color: white;
+  font-size: 22px;
+  text-transform: uppercase; }
+  .mainContentBlind .asideBlind a {
+    color: darkblue; }
+  .mainContentBlind .asideBlind .info a {
+    color: black; }
+  .mainContentBlind .asideBlind .ban {
+    border: 0px solid;
+    float: none;
+    margin: 10px 6px 4px 6px; }
+    .mainContentBlind .asideBlind .ban img {
+      width: 320px;
+      height: 250px; }
+.mainContentBlind h3 {
+  font-size: 30px; }
+
+.headerBlind {
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+  background-color: white; }
+  .headerBlind .nameCompany {
+    color: black; }
+    .headerBlind .nameCompany .name {
+      color: black; }
+  .headerBlind .contactCompany {
+    color: darkblue; }
+
+.footerBlind {
+  background-color: #cccfce; }
+  .footerBlind div {
+    color: black; }
+    .footerBlind div a {
+      color: #414544; }
+
+/*# sourceMappingURL=style.css.map */
