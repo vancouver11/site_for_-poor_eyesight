@@ -25,7 +25,6 @@ function getCookie(key){
 let cookieBtn = document.getElementsByClassName('iconBlind')[0]
 cookieBtn.addEventListener('click', function () { 
     document.cookie = `BlindMode=${(getCookie('BlindMode'))?0:1}`;
-    console.log(document.cookie);
     setMode();
  })
 
